@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" class="transition-colors">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to My Blog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen p-6 bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors">
+
+  <div class="flex justify-end mb-4">
+    <button id="toggleDark" class="px-4 py-2 rounded bg-gray-200 dark:bg-gray-700 text-black dark:text-white">
+         Dark Mode
+    </button>
+  </div>
+  </div>
+  <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+    <div class="bg-white dark:bg-gray-800 rounded shadow p-4">
+      <img src="image/blog.jpg" alt="Blog" class="rounded mb-3">
+      <h2 class="text-3xl font-bold mb-4">Welcome to My Blog</h2>
+<p id="blogSummary" class="text-sm mb-3">
+  Welcome to my blog! Here, I share simple thoughts, helpful tips, and interesting stories from my daily life.
+  <span id="moreText" class="hidden">
+    I hope you enjoy reading and find something useful or fun. Stay tuned for more updates and ideas!
+  </span>
+</p>
+<button id="readMoreBtn" class="text-blue-500 hover:underline">Read More</button>
+  </div>
+  <div class="mt-10">
+    <h3 class="text-2xl mb-4">Leave a Comment</h3>
+    <form id="commentForm" class="space-y-4">
+      <input type="text" id="name" placeholder="Your name" required
+             class="w-full px-4 py-2 border rounded dark:bg-gray-700 dark:border-gray-600">
+      <textarea id="comment" placeholder="Your comment" required
+                class="w-full px-4 py-2 border rounded dark:bg-gray-700 dark:border-gray-600"></textarea>
+      <button type="submit"
+              class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Submit</button>
+    </form>
+
+    <div id="comments" class="mt-6 space-y-4">
+    </div>
+  </div>
+
+  <script src="style.js"></script>
+</body>
+</html>
